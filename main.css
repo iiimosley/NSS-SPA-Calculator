@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+#calculator {
+    width: 60%;
+    margin: 7em auto;
+    text-align: center;
+}
+
+h1 {
+    width: 60%;
+    margin: 2vw auto;
+    border-bottom: 1px solid black;
+}
+
+input {
+    display: inline-block;
+    width: 15vw;
+    height: auto;
+    margin: 1vw 2vw;
+    font-size: 3vw;
+    border: .1vw groove black;
+    text-align: center;
+}
+
+button {
+    margin: 1vw .5vw;
+    width: 8vw;
+    height: 3vw;
+    font-size: 1.3vw;
+    letter-spacing: .1vw;
+}
+
+#output {
+    margin: 4vw auto;
+    font-size: 5vw;
+}
