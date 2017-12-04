@@ -16,7 +16,7 @@ function divide(num1, num2) {
 }
 
 function calculate(num1, num2, func) {
-    return func(num1, num2);
+    return this[func](num1, num2);
 };
 
 //send back to DOM
@@ -33,18 +33,23 @@ function calcPrint(f) {
 }
 
 //call + send 
-document.getElementById("add").addEventListener("click", function () {
-    calcPrint(add);
+document.getElementById("findFunction").addEventListener("click", function () {
+    calcPrint(event.target.id);
 });
 
-document.getElementById("subtract").addEventListener("click", function () {
-    calcPrint(subtract);
-});
 
-document.getElementById("multiply").addEventListener("click", function () {
-    calcPrint(multiply);
-});
+// document.getElementById("add").addEventListener("click", function () {
+//     calcPrint(add);
+// });
 
-document.getElementById("divide").addEventListener("click", function () {
-    calcPrint(divide);
-});
+// document.getElementById("subtract").addEventListener("click", function () {
+//     calcPrint(subtract);
+// });
+
+// document.getElementById("multiply").addEventListener("click", function () {
+//     calcPrint(multiply);
+// });
+
+// document.getElementById("divide").addEventListener("click", function () {
+//     calcPrint(divide);
+// });
